@@ -145,22 +145,22 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="index.html">Inicio</a>
+                            <a href="{{url('/')}}">Inicio</a>
                         </li>
                         <li>
-                            <a href="shop.html">Invitaciones con foto</a>
+                            <a href="{{url('bodas')}}">Invitaciones con foto</a>
                         </li>
                         <li>
-                            <a href="single-product.html">Grabado Laser</a>
+                            <a href="{{url('bodas')}}">Grabado Laser</a>
                         </li>
                         <li>
-                            <a href="cart.html">Invitaciones de Boda</a>
+                        <a href="{{url('bodas')}}">Invitaciones de Boda</a>
                         </li>
                         <li>
-                            <a href="checkout.html">Invitaciones de XV años</a>
+                            <a href="{{url('bodas')}}">Invitaciones de XV años</a>
                         </li>
                         <li>
-                            <a href="#">Invitaciones de Niños</a>
+                            <a href="{{url('bodas')}}">Invitaciones de Niños</a>
                         </li>
                         <li>
                             <a href="#">Contactanos</a>
