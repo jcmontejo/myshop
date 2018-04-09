@@ -160,25 +160,33 @@
                                 <div id="payment">
                                     <ul class="payment_methods methods">
                                         <li class="payment_method_bacs">
-                                            <input type="radio" data-order_button_text="" checked="checked" value="bacs" name="payment_method" class="input-radio" id="payment_method_bacs">
+                                            <input type="checkbox" name="" id="">
                                             <label for="payment_method_bacs">Transferencia bancaria directa </label>
                                             <div class="payment_box payment_method_bacs">
                                                 <p>Haga su pago directamente en nuestra cuenta bancaria. Utilice su ID de pedido
                                                     como referencia de pago. Su pedido no será realizado hasta que los fondos
                                                     se hayan liquidado en nuestra cuenta.</p>
+                                                <p>
+                                                   
+                                                </p>
                                             </div>
                                         </li>
 
                                         <li class="payment_method_paypal">
-                                            <input type="radio" data-order_button_text="Proceed to PayPal" value="paypal" name="payment_method" class="input-radio" id="payment_method_paypal">
-                                            <label for="payment_method_paypal">PayPal
+                                            {{--
+                                            <input type="radio" data-order_button_text="Proceed to PayPal" value="paypal" name="payment_method" class="input-radio" id="payment_method_paypal"> --}}
+                                            <input type="checkbox" name="check" id="check" value="1" onchange="javascript:showContent()" />
+
+                                            <label for="payment_method_paypal">Crédito/Debito
                                                 <img alt="PayPal Acceptance Mark" src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png">
-                                                <a title="What is PayPal?" onclick="javascript:window.open('https://www.paypal.com/gb/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"
-                                                    class="about_paypal" href="https://www.paypal.com/gb/webapps/mpp/paypal-popup">¿Qué es PayPal?</a>
                                             </label>
-                                            <div style="display:none;" class="payment_box payment_method_paypal">
-                                                <p>Pagar a través de PayPal; puede pagar con su tarjeta de crédito si no tiene
-                                                    una cuenta PayPal.</p>
+                                            <div class="payment_box payment_method_paypal">
+                                                <p>
+                                                    {{-- @include('frontEnd.modal-payment') --}}
+                                                    <div id="content" style="display: none;">
+                                                        @include('frontEnd.modal-payment')
+                                                    </div>
+                                                </p>
                                             </div>
                                         </li>
                                     </ul>

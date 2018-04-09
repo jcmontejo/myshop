@@ -23,7 +23,64 @@
     <link rel="stylesheet" href="{{asset('front/style.css')}}">
     <link rel="stylesheet" href="{{asset('front/css/responsive.css')}}"> {{-- Color Picker --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.3.3/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <style>
+        h4 {
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
 
+        .amount {
+            display: inline;
+        }
+
+        #pay {
+            margin-top: 10px;
+        }
+
+        .form-control,
+        .btn {
+            border-radius: 0;
+
+            .standard-button {
+                // background-color: #eebe25;
+                color: rgba(0, 0, 0, 0.5);
+                text-transform: uppercase;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 35px;
+                padding-right: 35px;
+                border-radius: 0;
+                border: none;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 16em;
+                font-weight: 600;
+                &:hover,
+                &:active {
+                    // background-color: #616dab;
+                    background-color: #4b6a7e;
+                    color: white;
+                }
+
+            }
+
+            .btn-anim {
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+
+
+            .btn-anim:after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+    </style>
 </head>
 
 <body>
@@ -219,7 +276,18 @@
         $('#color').colorpicker({});
     </script>
     <script>
-        $('#colorin').colorpicker({});
+        $('#colorrin').colorpicker({});
+    </script>
+    <script type="text/javascript">
+        function showContent() {
+            element = document.getElementById("content");
+            check = document.getElementById("check");
+            if (check.checked) {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
     </script>
 </body>
 
