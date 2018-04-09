@@ -29,6 +29,10 @@ Route::group(['middleware' => ['web']], function () {
 });
 
 Route::get('bodas', 'GeneralController@bodas');
+Route::get('infantiles', 'GeneralController@infantiles');
+Route::get('foto', 'GeneralController@foto');
+Route::get('laser', 'GeneralController@laser');
+Route::get('quince', 'GeneralController@quince');
 Route::get('single-product/{id}', 'GeneralController@singleProduct');
 Route::post('process', 'GeneralController@process');
 Route::post('order', 'GeneralController@order');

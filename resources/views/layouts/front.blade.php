@@ -148,19 +148,19 @@
                             <a href="{{url('/')}}">Inicio</a>
                         </li>
                         <li>
-                            <a href="{{url('bodas')}}">Invitaciones con foto</a>
+                            <a href="{{url('foto')}}">Invitaciones con foto</a>
                         </li>
                         <li>
-                            <a href="{{url('bodas')}}">Grabado Laser</a>
+                            <a href="{{url('laser')}}">Grabado Laser</a>
                         </li>
                         <li>
                         <a href="{{url('bodas')}}">Invitaciones de Boda</a>
                         </li>
                         <li>
-                            <a href="{{url('bodas')}}">Invitaciones de XV años</a>
+                            <a href="{{url('quince')}}">Invitaciones de XV años</a>
                         </li>
                         <li>
-                            <a href="{{url('bodas')}}">Invitaciones de Niños</a>
+                            <a href="{{url('infantiles')}}">Invitaciones de Niños</a>
                         </li>
                         <li>
                             <a href="#">Contactanos</a>
