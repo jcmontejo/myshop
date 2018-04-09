@@ -85,11 +85,27 @@
                                         </h3>
                                         <p id="order_comments_field" class="form-row notes">
                                             <label class="" for="order_comments">Escribe el texto que llevara la tarjeta</label>
-                                            <textarea cols="5" rows="2" placeholder="Escribe aquí." id="order_comments" class="input-text "
-                                                name="order_comments"></textarea>
+                                            <textarea cols="5" rows="2" placeholder="Escribe aquí." id="order_comments" class="input-text " name="order_comments"></textarea>
                                         </p>
                                         <p>
-                                        <img src="{{asset('uploads')}}/{{$card->image}}" alt="">
+                                            <label class="" for="order_comments">Selecciona el color que llevara la tarjeta</label>
+                                            <input class="form-control" type="text" id="color" />
+                                        </p>
+                                        <p>
+                                            <label class="" for="order_comments">Selecciona el color de letra que llevara la tarjeta</label>
+                                            <input class="form-control" type="text" id="colorin" />
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-2">
+                                    <div class="woocommerce-shipping-fields">
+                                        <h3 id="ship-to-different-address">
+                                            <label class="checkbox" for="ship-to-different-address-checkbox">Invitación seleccionada</label>
+                                        </h3>
+                                        <p>
+                                            <img src="{{asset('uploads')}}/{{$card->image}}" alt="">
                                         </p>
 
 
@@ -113,10 +129,10 @@
                                         <tr class="cart_item">
                                             <td class="product-name">
                                                 {{$card->title}}
-                                            <strong class="product-quantity">× {{$quantity}}</strong>
+                                                <strong class="product-quantity">× {{$quantity}}</strong>
                                             </td>
                                             <td class="product-total">
-                                            <span class="amount">${{number_format($total)}}</span>
+                                                <span class="amount">${{number_format($total)}}</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -125,14 +141,14 @@
                                         <tr class="cart-subtotal">
                                             <th>Subtotal</th>
                                             <td>
-                                            <span class="amount">${{number_format($total)}}</span>
+                                                <span class="amount">${{number_format($total)}}</span>
                                             </td>
                                         </tr>
                                         <tr class="order-total">
                                             <th>Orden Total</th>
                                             <td>
                                                 <strong>
-                                                <span class="amount">${{number_format($total)}}</span>
+                                                    <span class="amount">${{number_format($total)}}</span>
                                                 </strong>
                                             </td>
                                         </tr>
@@ -147,10 +163,12 @@
                                             <input type="radio" data-order_button_text="" checked="checked" value="bacs" name="payment_method" class="input-radio" id="payment_method_bacs">
                                             <label for="payment_method_bacs">Transferencia bancaria directa </label>
                                             <div class="payment_box payment_method_bacs">
-                                                <p>Haga su pago directamente en nuestra cuenta bancaria. Utilice su ID de pedido como referencia de pago. Su pedido no será realizado hasta que los fondos se hayan liquidado en nuestra cuenta.</p>
+                                                <p>Haga su pago directamente en nuestra cuenta bancaria. Utilice su ID de pedido
+                                                    como referencia de pago. Su pedido no será realizado hasta que los fondos
+                                                    se hayan liquidado en nuestra cuenta.</p>
                                             </div>
                                         </li>
-                                        
+
                                         <li class="payment_method_paypal">
                                             <input type="radio" data-order_button_text="Proceed to PayPal" value="paypal" name="payment_method" class="input-radio" id="payment_method_paypal">
                                             <label for="payment_method_paypal">PayPal
@@ -159,7 +177,8 @@
                                                     class="about_paypal" href="https://www.paypal.com/gb/webapps/mpp/paypal-popup">¿Qué es PayPal?</a>
                                             </label>
                                             <div style="display:none;" class="payment_box payment_method_paypal">
-                                                <p>Pagar a través de PayPal; puede pagar con su tarjeta de crédito si no tiene una cuenta PayPal.</p>
+                                                <p>Pagar a través de PayPal; puede pagar con su tarjeta de crédito si no tiene
+                                                    una cuenta PayPal.</p>
                                             </div>
                                         </li>
                                     </ul>

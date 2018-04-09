@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$cards = App\Card::all();
+	return view('welcome')
+	->with('cards', $cards);
 });
 
 Auth::routes();

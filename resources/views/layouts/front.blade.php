@@ -21,7 +21,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{asset('front/css/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('front/style.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/responsive.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/responsive.css')}}"> {{-- Color Picker --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.3.3/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -50,8 +52,8 @@
                 <div class="col-sm-6">
                     <div class="logo">
                         <h1>
-                            <a href="./">
-                            <img src="{{asset('front/img/sanchez_2.jpg')}}" style="width:176px;">
+                            <a href="{{url('/')}}">
+                                <img src="{{asset('front/img/sanchez_2.jpg')}}" style="width:176px;">
                             </a>
                         </h1>
                     </div>
@@ -119,17 +121,14 @@
                             at?
                         </p>
                         <div class="footer-social">
-                            <a href="#" target="_blank">
+                            <a href="https://www.facebook.com/imprenta.sanchez" target="_blank">
                                 <i class="fa fa-facebook"></i>
                             </a>
                             <a href="#" target="_blank">
                                 <i class="fa fa-twitter"></i>
                             </a>
                             <a href="#" target="_blank">
-                                <i class="fa fa-youtube"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-instagram"></i>
                             </a>
                         </div>
                     </div>
@@ -207,6 +206,21 @@
     <!-- Slider -->
     <script type="text/javascript" src="{{asset('front/js/bxslider.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('front/js/script.slider.js')}}"></script>
+
+    {{-- Ckeditor --}}
+    <script src="{{asset('/vendor/unisharp/laravel-ckeditor/ckeditor.js')}}"></script>
+    <script src="{{asset('/vendor/unisharp/laravel-ckeditor/adapters/jquery.js')}}"></script>
+    <script>
+        $('textarea').ckeditor();
+        // $('.textarea').ckeditor(); // if class is prefered.
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.3.3/js/bootstrap-colorpicker.min.js"></script>
+    <script>
+        $('#color').colorpicker({});
+    </script>
+    <script>
+        $('#colorin').colorpicker({});
+    </script>
 </body>
 
 </html>

@@ -185,6 +185,8 @@ return [
 
         Intervention\Image\ImageServiceProvider::class,
 
+        Unisharp\Ckeditor\ServiceProvider::class,
+
     ],
 
     /*
