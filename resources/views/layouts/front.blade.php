@@ -276,7 +276,7 @@
         $('#color').colorpicker({});
     </script>
     <script>
-        $('#colorrin').colorpicker({});
+        $('#colorin').colorpicker({});
     </script>
     <script type="text/javascript">
         function showContent() {
