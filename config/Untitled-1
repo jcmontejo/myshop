@@ -1,0 +1,2 @@
+php artisan crud:generate Order --fields="billing_first_name:string:required, billing_last_name:string:required, billing_address_1:string:required, billing_city:string:required, billing_postcode:string:required, billing_email:email:required, billing_phone:string:required, order_comments:string:required, order_color_card:string:required, order_color_letter:string:required, order_date:date:required, total:string:total, card:string:required, status:integer" --route=yes --pk=id --view-path="admin" --namespace=Admin --route-group=admin
+

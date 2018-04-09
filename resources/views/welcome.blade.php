@@ -117,7 +117,8 @@
                                 <div class="product-hover">
                                     <a href="{{url('single-product')}}/{{$item->id}}" class="add-to-cart-link">
                                         <i class="fa fa-shopping-cart"></i> Comprar</a>
-                                    {{-- <a href="single-product.html" class="view-details-link">
+                                    {{--
+                                    <a href="single-product.html" class="view-details-link">
                                         <i class="fa fa-link"></i> See details</a> --}}
                                 </div>
                             </div>

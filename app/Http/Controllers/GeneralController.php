@@ -30,7 +30,12 @@ class GeneralController extends Controller
         return view('frontEnd.cart')
         ->with('quantity', $quantity)
         ->with('total', $total)
-        ->with('card', $card);
-        
+        ->with('card', $card);    
+    }
+
+    public function order (Request $request)
+    {
+        $input = $request->all();
+        dd($input);
     }
 }

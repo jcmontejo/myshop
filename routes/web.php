@@ -31,3 +31,7 @@ Route::group(['middleware' => ['web']], function () {
 Route::get('bodas', 'GeneralController@bodas');
 Route::get('single-product/{id}', 'GeneralController@singleProduct');
 Route::post('process', 'GeneralController@process');
+Route::post('order', 'GeneralController@order');
+Route::group(['middleware' => ['web']], function () {
+	Route::resource('admin/order', 'Admin\\OrderController');
+});

@@ -98,6 +98,17 @@
                         </ul>
                     </div>
                 </div>
+                @if(session()->has('message'))
+                <div class="x_content bs-example-popovers">
+                    <div class="alert alert-success alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h3>
+                            <strong>Mensaje del sistema:</strong> {{ session()->get('message') }}</h3>
+                    </div>
+                </div>
+                @endif
             </div>
         </div>
     </div>

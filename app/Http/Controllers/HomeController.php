@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Card;
+use App\Order;
 
 class HomeController extends Controller
 {
@@ -23,10 +23,10 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {   
-        $cards = Card::all();
-	    
-        return view('home')
-        ->with('cards', $cards);
+    {
+        $order = Order::all();
+
+        return view('home', compact('order'));
+        // return view('home');
     }
 }
