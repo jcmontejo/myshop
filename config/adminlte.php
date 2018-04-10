@@ -129,71 +129,33 @@ return [
             'url'         => 'admin/order',
             'icon'        => 'list-ul',
         ],
-        [
-            'text'        => 'Clientes',
-            'url'         => 'admin/client',
-            'icon'        => 'users',
-        ],
+        // [
+        //     'text'        => 'Clientes',
+        //     'url'         => 'admin/client',
+        //     'icon'        => 'users',
+        // ],
         'AJUSTES',
         [
-            'text' => 'Profile',
+            'text' => 'Perfil',
             'url'  => 'admin/settings',
             'icon' => 'user',
         ],
         [
-            'text' => 'Change Password',
+            'text' => 'Cambiar Contraseña',
             'url'  => 'admin/settings',
             'icon' => 'lock',
         ],
+        'ETIQUETAS',
         [
-            'text'    => 'Multilevel',
-            'icon'    => 'share',
-            'submenu' => [
-                [
-                    'text' => 'Level One',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'Level One',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'Level Two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'Level Two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'Level One',
-                    'url'  => '#',
-                ],
-            ],
-        ],
-        'LABELS',
-        [
-            'text'       => 'Important',
+            'text'       => 'Importante',
             'icon_color' => 'red',
         ],
         [
-            'text'       => 'Warning',
+            'text'       => 'Advertencia',
             'icon_color' => 'yellow',
         ],
         [
-            'text'       => 'Information',
+            'text'       => 'Información',
             'icon_color' => 'aqua',
         ],
     ],

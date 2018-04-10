@@ -64,7 +64,7 @@
         <!-- small box -->
         <div class="small-box bg-red">
             <div class="inner">
-                <h3>65</h3>
+                <h3>$6500</h3>
 
                 <p>Ventas del día</p>
             </div>
@@ -98,7 +98,7 @@
                         <th>Teléfono de Contacto</th>
                         <th>Total de invitaciones</th>
                         <th>Fecha de Entrega</th>
-                        <th>Actions</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -114,12 +114,12 @@
                         <td>{{$item->number_cards}}</td>
                         <td>{{$item->order_date}}</td>
                         <td>
-                            <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#modal-default">
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#modal-default">
                                 Ver detalles
                             </button>
-                            <a href="{{ url('admin/order/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs">Detalles</a>
+                            {{-- <a href="{{ url('admin/order/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs">Detalles</a>
                             {!! Form::open([ 'method'=>'DELETE', 'url' => ['admin/order', $item->id], 'style' => 'display:inline' ]) !!} {!! Form::submit('Delete',
-                            ['class' => 'btn btn-danger btn-xs']) !!} {!! Form::close() !!}
+                            ['class' => 'btn btn-danger btn-xs']) !!} {!! Form::close() !!} --}}
                         </td>
                     </tr>
                     @endforeach
