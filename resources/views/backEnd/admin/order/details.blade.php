@@ -16,8 +16,23 @@
           <img src="{{asset('uploads')}}/{{$card->image}}" class="img-responsive center-block" alt="">
         </p>
         <p>
-
+          <h3 class="center-block">Texto solicitado</h3>
         </p>
+        <P>
+          {!!$item->order_comments!!}
+        </P>
+        <p>
+          <h3 class="center-block">Color de tarjeta</h3>
+        </p>
+        <P>
+          {!!$item->order_color_card!!}
+        </P>
+         <p>
+          <h3 class="center-block">Color de letra</h3>
+        </p>
+        <P>
+          {!!$item->order_color_letter!!}
+        </P>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cerrar</button>
