@@ -40,8 +40,8 @@
                         <td>{{ $item->slug }}</td>
                         <td>
                             <a href="{{ url('admin/category/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs">Actualizar</a>
-                            {!! Form::open([ 'method'=>'DELETE', 'url' => ['admin/category', $item->id], 'style' => 'display:inline' ]) !!} {!! Form::submit('Eliminar',
-                            ['class' => 'btn btn-danger btn-xs']) !!} {!! Form::close() !!}
+                            {{-- {!! Form::open([ 'method'=>'DELETE', 'url' => ['admin/category', $item->id], 'style' => 'display:inline' ]) !!} {!! Form::submit('Eliminar',
+                            ['class' => 'btn btn-danger btn-xs']) !!} {!! Form::close() !!} --}}
                         </td>
                     </tr>
                     @endforeach
