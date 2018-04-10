@@ -15,10 +15,10 @@
             <div class="icon">
                 <i class="fa fa-shopping-cart"></i>
             </div>
-            <a href="#" class="small-box-footer">
+            {{-- <a href="#" class="small-box-footer">
                 More info
                 <i class="fa fa-arrow-circle-right"></i>
-            </a>
+            </a> --}}
         </div>
     </div>
     <!-- ./col -->
@@ -35,10 +35,10 @@
             <div class="icon">
                 <i class="ion ion-stats-bars"></i>
             </div>
-            <a href="#" class="small-box-footer">
+            {{-- <a href="#" class="small-box-footer">
                 More info
                 <i class="fa fa-arrow-circle-right"></i>
-            </a>
+            </a> --}}
         </div>
     </div>
     <!-- ./col -->
@@ -53,10 +53,10 @@
             <div class="icon">
                 <i class="ion ion-person-add"></i>
             </div>
-            <a href="#" class="small-box-footer">
+            {{-- <a href="#" class="small-box-footer">
                 More info
                 <i class="fa fa-arrow-circle-right"></i>
-            </a>
+            </a> --}}
         </div>
     </div>
     <!-- ./col -->
@@ -71,10 +71,10 @@
             <div class="icon">
                 <i class="fa fa-money"></i>
             </div>
-            <a href="#" class="small-box-footer">
+            {{-- <a href="#" class="small-box-footer">
                 More info
                 <i class="fa fa-arrow-circle-right"></i>
-            </a>
+            </a> --}}
         </div>
     </div>
     <!-- ./col -->
