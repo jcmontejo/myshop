@@ -77,4 +77,9 @@ class GeneralController extends Controller
         $input = $request->all();
         dd($input);
     }
+
+    public function contact()
+    {
+        return view('frontEnd.contact');
+    }
 }

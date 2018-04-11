@@ -39,3 +39,4 @@ Route::post('order', 'GeneralController@order');
 Route::group(['middleware' => ['web']], function () {
 	Route::resource('admin/order', 'Admin\\OrderController');
 });
+Route::get('contact', 'GeneralController@contact');

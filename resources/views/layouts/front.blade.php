@@ -154,7 +154,7 @@
                             <a href="{{url('laser')}}">Grabado Laser</a>
                         </li>
                         <li>
-                        <a href="{{url('bodas')}}">Invitaciones de Boda</a>
+                            <a href="{{url('bodas')}}">Invitaciones de Boda</a>
                         </li>
                         <li>
                             <a href="{{url('quince')}}">Invitaciones de XV años</a>
@@ -163,7 +163,7 @@
                             <a href="{{url('infantiles')}}">Invitaciones de Niños</a>
                         </li>
                         <li>
-                            <a href="#">Contactanos</a>
+                        <a href="{{url('contact')}}">Contactanos</a>
                         </li>
                     </ul>
                 </div>
@@ -183,19 +183,23 @@
                         <h2>INVITACIONES
                             <span>SANCHEZ</span>
                         </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam
-                            laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque
-                            ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni
-                            at?
+                        <p>
+                            Matriz Av. Central Oriente No. 680 (29000) Tuxtla Gutiérrez, Chiapas
+                            <br> (01 961) 60 00 159
+                        </p>
+                        <p>
+                            Sucursal 1ª.Norte Poniente Nº 834-D
+                            <br> (01 961) 65 84 991
                         </p>
                         <div class="footer-social">
                             <a href="https://www.facebook.com/imprenta.sanchez" target="_blank">
                                 <i class="fa fa-facebook"></i>
                             </a>
+                            {{--
                             <a href="#" target="_blank">
                                 <i class="fa fa-twitter"></i>
-                            </a>
-                            <a href="#" target="_blank">
+                            </a> --}}
+                            <a href="https://www.instagram.com/invitaciones_sanchez/" target="_blank">
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </div>
@@ -300,6 +304,46 @@
             }
         }
     </script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyANCHCpQVaYUmdj1ld0VcCCD5Wj-6XubYw"></script>
+    {{--
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANCHCpQVaYUmdj1ld0VcCCD5Wj-6XubYw"></script> --}}
+
+    <script type="text/javascript">
+        jQuery(function ($) {
+            function init_map1() {
+                var myLocation = new google.maps.LatLng(16.752887,  -93.111283);
+                var mapOptions = {
+                    center: myLocation,
+                    zoom: 16
+                };
+                var marker = new google.maps.Marker({
+                    position: myLocation,
+                    title: "Invitaciones Sanchez Matriz"
+                });
+                var map = new google.maps.Map(document.getElementById("map1"),
+                    mapOptions);
+                marker.setMap(map);
+            }
+            init_map1();
+        });
+    </script>
+
+    <style>
+        .map {
+            min-width: 400px;
+            min-height: 400px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            background-color: #F5F5F5;
+            color: #36A0FF;
+            height: 70px;
+            font-size: 27px;
+            padding: 10px;
+        }
+    </style>
 </body>
 
 </html>
