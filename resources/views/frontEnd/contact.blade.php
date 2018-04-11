@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="well well-sm">
-                            <form class="form-horizontal" method="post">
+                            <form class="form-horizontal">
                                 <fieldset>
                                     <legend class="text-center header">Escribenos un mensaje</legend>
                                     <div class="form-group">
