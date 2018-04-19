@@ -12,7 +12,7 @@ class GeneralController extends Controller
     public function bodas()
     {
         // $bodas = Card::all();
-        $bodas = DB::table('cards')->where('category', '=', 1)->get();
+        $bodas = DB::table('cards')->where('category', '=', 1)->where('deleted_at', NULL)->get();
 
 	    return view('frontEnd.boda')
 	    ->with('bodas', $bodas);
@@ -21,7 +21,7 @@ class GeneralController extends Controller
     public function infantiles()
     {
         // $bodas = Card::all();
-        $bodas = DB::table('cards')->where('category', '=', 2)->get();
+        $bodas = DB::table('cards')->where('category', '=', 2)->where('deleted_at', NULL)->get();
 
 	    return view('frontEnd.infantiles')
 	    ->with('bodas', $bodas);
@@ -30,7 +30,7 @@ class GeneralController extends Controller
     public function foto()
     {
         // $bodas = Card::all();
-        $bodas = DB::table('cards')->where('category', '=', 3)->get();
+        $bodas = DB::table('cards')->where('category', '=', 3)->where('deleted_at', NULL)->get();
 
 	    return view('frontEnd.foto')
 	    ->with('bodas', $bodas);
@@ -39,7 +39,7 @@ class GeneralController extends Controller
     public function laser()
     {
         // $bodas = Card::all();
-        $bodas = DB::table('cards')->where('category', '=', 4)->get();
+        $bodas = DB::table('cards')->where('category', '=', 4)->where('deleted_at', NULL)->get();
 
 	    return view('frontEnd.laser')
 	    ->with('bodas', $bodas);
@@ -48,7 +48,7 @@ class GeneralController extends Controller
     public function quince()
     {
         // $bodas = Card::all();
-        $bodas = DB::table('cards')->where('category', '=', 5)->get();
+        $bodas = DB::table('cards')->where('category', '=', 5)->where('deleted_at', NULL)->get();
 
 	    return view('frontEnd.quince')
 	    ->with('bodas', $bodas);
