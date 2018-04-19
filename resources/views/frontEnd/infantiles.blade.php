@@ -9,11 +9,10 @@
                         {{--
                         <h1>Hello, world!</h1> --}}
                         <p>
-                            Escoge la invitación de cumpleaños infantil, bautizo, comunión, confirmación, baby shower que más te guste entre la desena
-                            de diseños y personalízala hasta adaptarla a las necesidades de tu evento. Invitación muy coloridas,
+                            Escoge la invitación de cumpleaños infantil, bautizo, comunión, confirmación, baby shower que más te guste entre la decena
+                            de diseños y personalízala hasta adaptarla a las necesidades de tu evento. Invitaciones muy coloridas,
                             que transmitan alegría en las que se debe especificar el nombre del celebrante, la fecha y la
-                            hora del evento, así como el lugar donde se va a llevar a cabo la fiesta. Las tarjetas con dibujos
-                            que sus pequeños le sea de su agrado.
+                            hora del evento, así como el lugar donde se va a llevar a cabo la fiesta.
                         </p>
                     </div>
                 </div>

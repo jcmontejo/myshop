@@ -8,10 +8,10 @@
                     <div class="jumbotron">
                         {{--
                         <h1>Hello, world!</h1> --}}
-                        <p>Elige el diseño de tu invitación el grabado laser preferido. Elige el diseño del grabado y los detalles
-                            del evento, confirma la fecha de tu entrega, cotízala y envía tu invitación a nuestra sucursal.
-                            Si el grabado laser que deseas no se encuentra en nuestros formatos, envíanosla y te la ajustaremos
-                            de forma gratuita.
+                        <p>Elige el diseño de tu invitación con el grabado laser preferido. Elige el diseño del grabado y los
+                            detalles del evento, confirma la fecha de tu entrega, cotízala y envía tu invitación a nuestra
+                            sucursal. Si el grabado laser que deseas no se encuentra en nuestros formatos, envíanosla y te
+                            la ajustaremos de forma gratuita.
                         </p>
                     </div>
                 </div>
